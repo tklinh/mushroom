@@ -19,8 +19,7 @@ function Md2Page() {
 }
 
 function HomeWrapper() {
-  const navigate = useNavigate()
-  return <MushroomWebsite onNavigateMd2={() => navigate('/md2')} />
+  return <MushroomWebsite />
 }
 
 function App() {

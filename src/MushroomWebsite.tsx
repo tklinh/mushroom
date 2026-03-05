@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { ShoppingCart, Menu, Leaf, Truck, Award, Clock, Star, X } from "lucide-react"
 
-export default function MushroomWebsite({ onNavigateMd2 }: { onNavigateMd2?: () => void }) {
+export default function MushroomWebsite() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [cartCount, setCartCount] = useState(0)
   const [email, setEmail] = useState("")

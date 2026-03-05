@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const fmt = (n) => new Intl.NumberFormat("vi-VN").format(Math.round(n));
+const fmt = (n: number) => new Intl.NumberFormat("vi-VN").format(Math.round(n));
 
 const SECTIONS = ["Tổng quan", "Chi phí đầu tư", "Dòng tiền", "Phân tích rủi ro"];
 
@@ -117,7 +117,7 @@ export default function App() {
     { risk: "Logistics / kho lạnh xa cảng", level: "Trung bình", impact: "Tăng chi phí, mất chất lượng", mitigation: "Liên kết với doanh nghiệp có kho lạnh, đặt tại Thanh Hóa/Nghệ An" },
   ];
 
-  const levelColor = { "Cao": "bg-red-100 text-red-700", "Trung bình": "bg-yellow-100 text-yellow-700", "Thấp": "bg-green-100 text-green-700" };
+
 
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", maxWidth: 900, margin: "0 auto", padding: 16, background: "#f8fafc" }}>
