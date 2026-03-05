@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { ShoppingCart, Menu, Leaf, Truck, Award, Clock, Star, X } from "lucide-react"
 
-export default function MushroomWebsite() {
+export default function MushroomWebsite({ onNavigateMd2 }: { onNavigateMd2?: () => void }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [cartCount, setCartCount] = useState(0)
   const [email, setEmail] = useState("")
@@ -119,6 +119,12 @@ export default function MushroomWebsite() {
                 >
                   Contact
                 </a>
+                <a
+                  href="/md2"
+                  className="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  MD2
+                </a>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -155,6 +161,9 @@ export default function MushroomWebsite() {
               </a>
               <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-green-600">
                 Contact
+              </a>
+              <a href="/md2" className="block px-3 py-2 text-gray-700 hover:text-green-600">
+                MD2
               </a>
             </div>
           </div>
